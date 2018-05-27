@@ -38,8 +38,6 @@ class Footer extends Component {
     clearInterval(this.checkSong())
   }
 
-  component
-
   render() {
 
     const styles = {
