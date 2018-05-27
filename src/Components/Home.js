@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 import HighlightedProjects from './HighlightedProjects';
 import Button from './Button';
 import EricPhoto from '../Assets/img/ericstout.jpg';
@@ -23,6 +24,10 @@ class Home extends Component {
     }
     return (
       <div style={styles.container}>
+        <Helmet>
+          <title>Eric Stout | Front End Developer</title>
+          <meta name="description" content="A JavaScript-loving front end developer" />
+        </Helmet>
         <div className="container">
           <div className="row">
             <div className="col-5">

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 
 class Experience extends Component {
 
@@ -16,6 +17,10 @@ class Experience extends Component {
 
     return (
       <div className="container">
+        <Helmet>
+          <title>Experience | Eric Stout - Front End Developer</title>
+          <meta name="description" content="Experience, education, and skills" />
+        </Helmet>
         <div className="row">
           <div className="col-8">
             <h1>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 import ProjectItem from './ProjectItem';
 
 class Projects extends Component {
@@ -124,6 +125,10 @@ class Projects extends Component {
     }
     return (
       <div style={styles.container}>
+        <Helmet>
+          <title>Projects | Eric Stout - Front End Developer</title>
+          <meta name="description" content="A collections of projects by Eric Stout" />
+        </Helmet>
         <div className="container">
           <div className="row">
             <div className="col-12">
