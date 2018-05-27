@@ -90,6 +90,12 @@ nav ul li a:hover {
   color: white;
 }
 
+nav ul li a.active {
+  padding: 18px 10px;
+  background-color: rgb(223, 81, 121);
+  color: white;
+}
+
 a {
   color: rgb(223, 81, 121);
   text-decoration: none;
