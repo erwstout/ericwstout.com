@@ -15,6 +15,7 @@ import Footer from './Components/Footer';
 import Experience from './Components/Experience';
 import Contact from './Components/Contact';
 import Alert from './Components/Alert';
+import NotFound from './Components/NotFound';
 
 class App extends Component {
 
@@ -63,7 +64,7 @@ class App extends Component {
                     <Route exact path="/projects" component={Projects} />
                     <Route exact path="/experience" component={Experience} />
                     <Route exact path="/contact" component={Contact} />
-                    <Route render={() => <div>404 Not Found, dawg.</div>} />
+                    <Route component={NotFound} />
                   </Switch>
                 </CSSTransition>
               </TransitionGroup>
