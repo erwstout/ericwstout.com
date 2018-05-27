@@ -26,7 +26,7 @@ class Footer extends Component {
   checkSong() {
     setInterval(() => {
       this.getLatestTrack();
-    }, 1000);
+    }, 25000);
   }
 
   componentDidMount() {
