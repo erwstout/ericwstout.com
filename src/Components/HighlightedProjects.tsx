@@ -1,22 +1,24 @@
-import React, { Component } from 'react';
+import React from "react";
 
-class HighlightedProjects extends Component {
-
-  render() {
-    return (
-      <div style={{marginBottom: `30px`}}>
-        <h3>
-          <a href={this.props.link} title={this.props.project}>
-            {this.props.project}
-          </a>
-        </h3>
-        <p>
-          {this.props.projectDescription}
-        </p>
-      </div>
-    );
-  }
-
+interface Props {
+  link: string;
+  project: string;
+  projectDescription: string;
 }
+
+const HighlightedProjects: React.FC<Props> = ({
+  link,
+  project,
+  projectDescription
+}: Props) => (
+  <div style={{ marginBottom: `30px` }}>
+    <h3>
+      <a href={link} title={project}>
+        {project}
+      </a>
+    </h3>
+    <p>{projectDescription}</p>
+  </div>
+);
 
 export default HighlightedProjects;
